@@ -1,0 +1,21 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page24954387.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^en$ page25054423.html [NC]
+RewriteRule ^en/$ page25054423.html [NC]
+
+RewriteRule ^catalogue$ page24964135.html [NC]
+RewriteRule ^catalogue/$ page24964135.html [NC]
+
+RewriteRule ^en/catalogue$ page25054544.html [NC]
+RewriteRule ^en/catalogue/$ page25054544.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3838-3830-4862-a364-333635653261/favicon.ico [R=302,L]
+
